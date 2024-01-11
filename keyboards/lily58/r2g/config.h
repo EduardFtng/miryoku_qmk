@@ -44,13 +44,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#   define ENABLE_RGB_MATRIX_RAINBOW_MOVING_CHEVRON
 //#   define ENABLE_RGB_MATRIX_RAINBOW_BEACON
 
-#if defined(RGB_MATRIX_KEYPRESSES) || defined(RGB_MATRIX_KEYRELEASES)
-#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
-#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE
-#endif
+//#if defined(RGB_MATRIX_KEYPRESSES) || defined(RGB_MATRIX_KEYRELEASES)
+//#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
+//#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE
+//#endif
 
-#   define SPLIT_TRANSPORT_MIRROR
-#endif
+//#   define SPLIT_TRANSPORT_MIRROR
+//#endif
 
 #ifdef RGBLIGHT_ENABLE
 #   define RGBLIGHT_LIMIT_VAL 120

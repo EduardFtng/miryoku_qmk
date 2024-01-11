@@ -21,6 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 //#define SERIAL_USE_MULTI_TRANSACTION
 
+#define LAYER_STATE_16BIT
+
 
 #ifdef RGB_MATRIX_ENABLE
 #   define RGB_DI_PIN D3
@@ -36,11 +38,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #   define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
 #   define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
-#   define ENABLE_RGB_MATRIX_ALPHAS_MODS
-#   define ENABLE_RGB_MATRIX_BREATHING
-#   define ENABLE_RGB_MATRIX_HUE_WAVE
-#   define ENABLE_RGB_MATRIX_RAINBOW_MOVING_CHEVRON
-#   define ENABLE_RGB_MATRIX_RAINBOW_BEACON
+//#   define ENABLE_RGB_MATRIX_ALPHAS_MODS
+//#   define ENABLE_RGB_MATRIX_BREATHING
+//#   define ENABLE_RGB_MATRIX_HUE_WAVE
+//#   define ENABLE_RGB_MATRIX_RAINBOW_MOVING_CHEVRON
+//#   define ENABLE_RGB_MATRIX_RAINBOW_BEACON
 
 #if defined(RGB_MATRIX_KEYPRESSES) || defined(RGB_MATRIX_KEYRELEASES)
 #   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
@@ -53,16 +55,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifdef RGBLIGHT_ENABLE
 #   define RGBLIGHT_LIMIT_VAL 120
 #endif
-
-#define LAYER_STATE_16BIT 
-#undef RGBLIGHT_EFFECT_RGB_TEST 
-#undef RGBLIGHT_EFFECT_CHRISTMAS 
-#undef RGBLIGHT_EFFECT_KNIGHT 
-#undef ENABLE_RGB_MATRIX_TYPING_HEATMAP
-
-#ifndef NO_DEBUG
-#define NO_DEBUG
-#endif // !NO_DEBUG
-#if !defined(NO_PRINT) && !defined(CONSOLE_ENABLE)
-#define NO_PRINT
-#endif // !NO_PRINT

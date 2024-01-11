@@ -23,8 +23,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define LAYER_STATE_16BIT
 
-#define RGB_MATRIX_ENABLE
-
 #ifdef RGB_MATRIX_ENABLE
 #   define RGB_DI_PIN D3
 #   define RGB_MATRIX_LED_COUNT 74
@@ -52,8 +50,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //#   define SPLIT_TRANSPORT_MIRROR
 //#endif
-
-#define RGBLIGHT_ENABLE
 
 #ifdef RGBLIGHT_ENABLE
 #   define RGBLIGHT_LIMIT_VAL 120

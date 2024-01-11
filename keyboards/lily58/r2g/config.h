@@ -23,6 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define LAYER_STATE_16BIT
 
+#define RGB_MATRIX_ENABLE
 
 #ifdef RGB_MATRIX_ENABLE
 #   define RGB_DI_PIN D3
@@ -47,7 +48,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#if defined(RGB_MATRIX_KEYPRESSES) || defined(RGB_MATRIX_KEYRELEASES)
 //#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
 //#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE
-//#endif
+#endif
 
 //#   define SPLIT_TRANSPORT_MIRROR
 //#endif

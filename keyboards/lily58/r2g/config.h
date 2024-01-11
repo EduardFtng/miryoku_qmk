@@ -52,6 +52,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#   define SPLIT_TRANSPORT_MIRROR
 //#endif
 
+#define RGBLIGHT_ENABLE
+
 #ifdef RGBLIGHT_ENABLE
 #   define RGBLIGHT_LIMIT_VAL 120
 #endif
